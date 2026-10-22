@@ -1,0 +1,5 @@
+---
+description: React component rules
+globs: components/**/*.tsx
+---
+- Prefer function components with hooks.

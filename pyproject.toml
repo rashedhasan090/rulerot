@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rulerot"
+version = "0.1.0"
+description = "Find stale and conflicting rules in AI coding-agent instruction files (AGENTS.md, CLAUDE.md, .cursor/rules, copilot-instructions)."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Md Rashedul Hasan"}]
+
+[project.scripts]
+rulerot = "rulerot.cli:main"
+
+[tool.setuptools]
+packages = ["rulerot"]
